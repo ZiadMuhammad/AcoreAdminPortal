@@ -26,5 +26,3 @@
 ## Data Storage
 
 Acore Admin Portal leverages LocalStorage for storing data. If no data is found in the LocalStorage, the application seamlessly falls back to using sample data, ensuring uninterrupted functionality and a smooth user experience.
-
-This project demonstrates the capability to build a robust and user-friendly admin portal using Angular and Angular Material. It provides a range of essential features, facilitating efficient book management within an administrative environment.
