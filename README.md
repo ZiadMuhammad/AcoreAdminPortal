@@ -1,5 +1,9 @@
 # Acore Admin Portal
 
+## Live Website
+
+Visit the [Acore Admin Portal Live Website](https://acoreadminpanel.web.app/) to test the application.
+
 ## Features
 
 ### Login
@@ -26,8 +30,3 @@
 ## Data Storage
 
 Acore Admin Portal leverages LocalStorage for storing data. If no data is found in the LocalStorage, the application seamlessly falls back to using sample data, ensuring uninterrupted functionality and a smooth user experience.
-
-## Live Website
-
-Visit the [Acore Admin Portal Live Website](https://acoreadminpanel.web.app/) to test the application.
-
