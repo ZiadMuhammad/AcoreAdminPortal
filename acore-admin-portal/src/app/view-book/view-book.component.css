@@ -1,0 +1,98 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.book-card {
+    padding: 70px;
+    margin: 20px;
+    display: inline-block;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .top-right-buttons {
+    text-align: right;
+    position: relative;
+    top: 20px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  p {
+    margin-top: 5px;
+  }
+  
+  img {
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .book-info-container {
+    display:flex;
+    margin-bottom: 30px;
+  }
+
+  .book-metrics {
+    margin-left: 50px;
+  }
+
+  .metric-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+  }
+
+  .metric-container .title {
+    font-weight: bold;
+    font-size: x-large;
+    color: #3f5ea8;
+  }
+
+  .metric-flex {
+    display: flex;
+  }
+
+  .meta-data {
+    display: flex;
+  }
+
+  .meta-brief {
+    margin-left: 35%;
+  }
+
+  .meta-brief .title {
+    color: gray;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .meta-paragraph {
+    margin-top: 15px;
+    color: rgb(136, 135, 135)
+  }
+
+  .meta-price {
+    color: #3f5ea8;
+    font-weight: bold;
+  }
+
+  .meta-category {
+    background-color: rgb(238, 236, 236);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px;
+  }
+  

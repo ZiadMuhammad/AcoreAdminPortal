@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" [opened]="true" class="sidenav">
+      <div class="logo-container">
+        <img src="https://i.ibb.co/F6qJXXf/acore-logo-cut.png" alt="Logo">
+        <button mat-icon-button (click)="toggleSidenav()">
+          <mat-icon>{{ isSidenavOpened ? 'chevron_left' : 'chevron_right' }}</mat-icon>
+        </button>
+      </div>
+
+      <mat-nav-list class="sidenav-list">
+        <mat-list-item [routerLink]="['/dashboard']" routerLinkActive="selected" class="list-item">
+          <div class="list-item-content">
+            <mat-icon mat-list-icon>library_books</mat-icon>
+            <h2 mat-line class="list-item-text">Books</h2>
+          </div>
+        </mat-list-item>      
+      </mat-nav-list>
+      
+    </mat-sidenav>
+  
+    <mat-sidenav-content style="background-color: #eff1fd;">
+      <mat-toolbar class="toolbar" style="background-color: white;">
+        <span class="toolbar-title" style="color: #3f5ea8;" (click)="toggleSidenav()">Acore admin dashboard</span>
+        <div class="super-admin">
+          <button class="admin-text" style="color: gray;" [matMenuTriggerFor]="menu">
+            Super Admin
+          </button>
+        </div>
+      </mat-toolbar>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+  <mat-menu #menu="matMenu">
+    <span class="email">{{ email || 'supaeradmin@example.com' }}</span>
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </mat-menu>
+  

@@ -1,0 +1,41 @@
+<app-navbar>
+    <div class="card-container">
+    <div *ngIf="book" class="book-card">
+        <div class="top-right-buttons">
+          <button mat-raised-button color="warn" (click)="openDeleteDialog()">Delete</button>
+          <button mat-raised-button  color="primary" (click)="editBook()">Edit</button>
+        </div>
+        <div class="book-info-container">
+            <div class="book-img">
+                <img src="https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UF1000,1000_QL80_.jpg" alt="Book Image">
+            </div>
+            <div class="book-metrics">
+                <h1 style="font-size: 30px; font-weight: bold; color: rgb(82, 74, 74);">{{ book.title }}</h1>
+                <div class="metric-flex">
+                    <div class="metric-container">
+                        <p class="title">450</p>
+                        <p>Pages</p>
+                    </div>
+                    <div class="metric-container">
+                        <p class="title">20h</p>
+                        <p>To read</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="meta-data">
+            <div class="meta-info">
+                <p class="meta-paragraph">By {{book.author}} | {{book.releaseDate}}</p>
+                <p class="meta-price">$ {{book.price}}</p>
+                <p class="meta-paragraph">ISBN: {{book.isbn}}</p>
+                <p class="meta-paragraph">Version: {{book.version}}</p>
+                <p class="meta-category">{{book.category}}</p>
+            </div>
+            <div class="meta-brief">
+                <div class="title">Brief</div>
+                <p class="meta-paragraph">{{book.brief}}</p>
+            </div>
+        </div>
+      </div>
+    </div>  
+</app-navbar>

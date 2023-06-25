@@ -1,0 +1,69 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 300px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .logo-container img {
+    width: 150px;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+  
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .toolbar-title {
+    cursor: pointer;
+  }
+
+  .spacer {
+    flex-grow: 1;
+  }
+  
+  .super-admin {
+    display: flex;
+    align-items: center;
+  }
+  
+  .email {
+    padding: 20px;
+  }
+  
+  .admin-text {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .list-item-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-item-text {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  
+  .sidenav-list {
+    background-color: #eff1fd;
+    border-right: 5px solid #bc79ab;
+  }
+  

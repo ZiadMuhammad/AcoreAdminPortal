@@ -1,0 +1,110 @@
+.component-container {
+    padding: 20px;
+}
+
+.addbook-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-container {
+    width: 100%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .first-half {
+    grid-column: 1;
+  }
+  
+  .second-half {
+    grid-column: 2;
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-container {
+      width: 100%;
+    }
+  
+    .first-half,
+    .second-half {
+      grid-column: 1;
+    }
+  }
+  
+  input {
+    height: 3vw;
+    width: 30vw;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px; /* Adjust the padding value as needed */
+    padding-right: 10px;
+  }
+  
+  select {
+    height: 3vw;
+    width: 31vw;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px; /* Adjust the padding value as needed */
+    padding-right: 15px;
+  }
+
+  .error-message {
+    color: red;
+  }
+
+  .grid-item textarea {
+    width: 31vw;
+    height: 10vh;
+  }
+
+  .upload-area {
+    display: flex;
+    flex-direction: column;
+    height: 47vh;
+    width: 29vw;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border: 2px dashed pink;
+    border-radius: 8px;
+  }
+  
+  .upload-icon img {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .upload-text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: rgb(209, 134, 146);
+  }
+  
+  .upload-button {
+    margin-top: 16px;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid rgb(209, 134, 146);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(209, 134, 146);
+    font-weight: bold;
+  }
+  
+  .upload-button input[type="file"] {
+    display: none;
+  }
+  
