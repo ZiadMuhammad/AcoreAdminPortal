@@ -21,7 +21,7 @@
 ![View Book](https://i.ibb.co/Tc2mPWH/View-Book.png)
 
 ### Delete Book
-![Delete Book](https://i.ibb.co/vz4bFTR/Delete-Book.png)
+![Delete Book](https://postimg.cc/TKS2K0tS)
 
 ## Data Storage
 
